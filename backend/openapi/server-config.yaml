@@ -1,0 +1,9 @@
+package: openapi
+output: internal/openapi/api.go
+generate:
+  gin-server: true
+output-options:
+  # to make sure that all types are generated
+  skip-prune: true
+import-mapping:
+  openapi.yaml: "-"
